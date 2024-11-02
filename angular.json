@@ -27,9 +27,27 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/lightbox2/dist/css/lightbox.min.css",
+
+
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/aos/dist/aos.css",
+
+
+
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/lightbox2/dist/js/lightbox.min.js",
+
+              "node_modules/aos/dist/aos.js"
+
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -97,5 +115,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b93f8951-f7c4-4ed3-9299-caf9fc906093"
   }
 }

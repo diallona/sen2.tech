@@ -1,0 +1,95 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid nav">
+    <a class="navbar-brand d-flex align-items-center" href="#" style="padding-left: 110px;">
+      <img id="logo" src="https://www.dynamique-mag.com/wp-content/uploads/sponsor-17.jpg" alt="Logo" 
+           width="65" height="65" class="d-inline-block align-text-top">
+      <span class="fw-bold text-success ms-4" style="font-size: 190%;">Sen2.Tech</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" style="padding: 10px;">
+          <a class="nav-link dropdown-toggle ecritures" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+            Nos Services
+          </a>
+          <ul class="dropdown-menu animated-dropdown" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/site">Création de sites web vitrines</a></li>
+            <li><a class="dropdown-item" routerLink="/application">Développement d'applications mobiles (iOS, Android, Flutter)</a></li>
+            <li><a class="dropdown-item" routerLink="/designe">Design UI/UX</a></li>
+            <li><a class="dropdown-item" routerLink="/optimisation">SEO et optimisation des performances</a></li>
+            <li><a class="dropdown-item" routerLink="/maintenance">Maintenance et support technique</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" style="padding: 10px;">
+          <a class="nav-link dropdown-toggle ecritures" href="#" id="navbarDropdown2" role="button" aria-expanded="false">
+            Graphisme
+          </a>
+          <ul class="dropdown-menu animated-dropdown" aria-labelledby="navbarDropdown2">
+            <li><a class="dropdown-item" routerLink="/maquette">Création de maquettes</a></li>
+            <li><a class="dropdown-item" routerLink="/communication">Supports de communication</a></li>
+            <li><a class="dropdown-item" routerLink="/designe">Design UI/UX</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" style="padding: 10px;">
+          <a class="nav-link active ecritures" aria-current="page" routerLink="/about">Qui sommes-nous</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success form-control me-2 ecritures" routerLink="/contact" type="submit">Contacter Nous</button>
+        </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+#logo {
+  border-radius: 50%; 
+}
+.nav {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: none; 
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+.dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-item:hover {
+  background-color: #007bff; 
+  color: #ffffff; 
+}
+.dropdown-item {
+  font-size: 16px; 
+}
+.ecritures {
+  font-size: 18px;
+  font-weight: bold; 
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<app-nav-carrousel></app-nav-carrousel>

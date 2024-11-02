@@ -1,0 +1,56 @@
+.social-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .social-icons li a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .social-icons li a:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .social-icons li a::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: -100%;
+    left: 0;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons li a:hover::before {
+    top: 100%;
+  }
+  
+  /* uiuuuuuuuuuuuuuuuuuuuuuuuuuu */
+  
+  

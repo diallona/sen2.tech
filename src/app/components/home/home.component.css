@@ -1,0 +1,68 @@
+
+
+.scrolling-image-container {
+    overflow: hidden; /* Masque les images qui dépassent les limites du conteneur */
+    width: 100%; /* S'adapte à la largeur de son conteneur parent */
+    height: 400px; /* Ajuste la hauteur pour contenir les images (augmentée) */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    position: relative;
+}
+
+.scrolling-images {
+    display: flex; /* Aligne les images horizontalement */
+    animation: scrollImages 15s linear infinite; /* Durée d'animation pour le défilement */
+}
+
+.scroll-image {
+    width: 300px; /* Ajuste la largeur des images (augmentée) */
+    height: 300px; /* Ajuste la hauteur des images (augmentée) */
+    object-fit: cover; /* Conserve le rapport d'aspect et remplit le conteneur */
+    margin-right: 20px; /* Espace entre les images */
+    transition: transform 0.5s ease; /* Transition pour l'animation de zoom */
+}
+
+/* Ajoute un zoom au survol et arrête le défilement */
+.scrolling-images:hover {
+    animation-play-state: paused; /* Met le défilement en pause */
+}
+
+.scroll-image:hover {
+    transform: scale(1.1); /* Zoom de l'image */
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0); /* Position de départ */
+    }
+    100% {
+        transform: translateX(-50%); /* Défile vers la gauche */
+    }
+}
+
+.agency-name {
+    color: #007bff; /* Couleur personnalisée pour le nom de l'agence */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .scroll-image {
+        width: 250px; /* Réduit la largeur des images sur les écrans plus petits */
+        height: 250px; /* Réduit la hauteur des images sur les écrans plus petits */
+    }
+    .scrolling-images {
+        animation: scrollImages 35s linear infinite; /* Ralentit légèrement le défilement */
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-image {
+        width: 200px; /* Réduit encore la largeur des images pour les très petits écrans */
+        height: 200px; /* Réduit encore la hauteur des images pour les très petits écrans */
+    }
+    .scrolling-images {
+        animation: scrollImages 40s linear infinite; /* Ralentit encore le défilement */
+    }
+}
+/* ============dernier============= */
+
+

@@ -1,0 +1,33 @@
+
+
+<div class="text-center mt-5">
+  <p class="motivational-quote"> 
+    <span> "Le succès n'est pas la clé du bonheur.</span>
+    <br>
+    <span data-aos="fade-right">  Le bonheur est la clé du succès.   </span> 
+    <span data-aos="fade-left">  Si vous aimez ce que vous faites, vous réussirez." </span>
+      
+    </p>
+</div>
+
+<h1 class="text-center fw-bold display-2">Nos <span class="text-primary">Services</span></h1>
+<div class="services-section container mere mt-5" data-aos="fade-up">
+  <div class="row justify-content-center">
+    <div *ngFor="let service of services" class="col-6 col-sm-4 col-md-3 d-flex mb-4"
+         data-aos="flip-left"
+         data-aos-easing="ease-out-cubic"
+         data-aos-duration="2000">
+      <div class="card text-center service-card">
+        <div class="card-img-top service-img">
+          <i [class]="service.icon + ' fa-5x'"></i>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ service.title }}</h5>
+          <p class="card-text">{{ service.description }}</p>
+          <button class="btn btn-primary mt-auto">{{ service.buttonText }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

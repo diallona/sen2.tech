@@ -1,0 +1,31 @@
+
+
+<!-- <div class="chat-body bg-light p-3" id="chat-body">
+    <div *ngFor="let msg of messages" [ngClass]="{'message sent': msg.sentByUser, 'message received': !msg.sentByUser}">
+      <p>{{ msg.text }}</p>
+    </div>
+  </div> -->
+  
+
+  <div class="chat-container">
+    <div class="chat-header bg-primary text-white p-2">
+      <h5 class="mb-0">Chat avec un conseiller</h5>
+    </div>
+    <div class="chat-body bg-light p-3" id="chat-body">
+      <!-- Les messages seront affichés ici -->
+      <div class="message received">
+        <p>Bonjour, comment pouvons-nous vous aider ?</p>
+      </div>
+    </div>
+    <div class="chat-footer bg-white p-2 d-flex">
+      <input
+        type="text"
+        class="form-control me-2"
+        placeholder="Écrire un message..."
+        [(ngModel)]="message"
+        (keyup.enter)="sendMessage()"
+      />
+      <button class="btn btn-primary" (click)="sendMessage()">Envoyer</button>
+    </div>
+  </div>
+  

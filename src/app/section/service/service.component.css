@@ -1,0 +1,91 @@
+
+
+
+    .mere {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    /* ======  animation========== */
+    .team-section {
+        margin-top: 50px;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .team-img {
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .card-text {
+        margin-bottom: 15px;
+    }
+
+    .team-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .service-card {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .service-img {
+        padding: 20px;
+        background-color: #f8f9fa; /* Couleur de fond pour les icônes */
+    }
+
+
+
+
+    /* ================================== */
+    
+
+
+
+body {
+    background-color: #f0f8ff; /* Fond léger pour contraster avec le texte */
+  }
+  
+  .motivational-quote {
+    font-size: 2em; /* Augmente la taille du texte */
+    color: #4CAF50;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s forwards;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition douce */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .motivational-quote:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+    color: #388E3C; /* Changement de couleur au survol */
+  }
